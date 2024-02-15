@@ -1,13 +1,30 @@
+// =========================================================
+// 
+//  Dear lovely reader,
+//
+//      This is not indicative of the quality CSS or HTML
+//  which I have written professionally for nearly an 
+//  entire decade. Staying on the bleeding edge of web 
+//  techologoies can teach you a thing or two about 
+//  pragmatism.
+//
+//      As Richard Stallman once famously said, "I speak in 
+//  paragraphs." My future will be focused on high perf.
+//  simulations and gaming, so I'm not worried about what
+//  this site looks like, or how bad this code smells.
+//
+//  Yours truly,
+//      - Colin Laws
+//
+//  p.s. I used ChatGPT 4 for quick and dirty css :)
+// =========================================================
+
 // Define base colors for theme
-$primary-color: #4086ff; // Example playful pink
-$accent-color: #ffc107; // Example accent color
-$light-background: #f4f4f4; // Light grey for background
-$dark-text: #333; // Dark grey for text
+$primary-color: #4086ff; 
+$accent-color: #ffc107; 
+$light-background: #f4f4f4; 
+$dark-text: #333;
 
-// Import the font
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
-// Reset some basic elements
 html, body {
   height: 100%;
   margin: 0;
@@ -17,25 +34,39 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  flex: 0 1 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .profile-picture {
-    display: flex;
-    flex: 0 1 auto;
-    width: 300px; // Adjust size as needed
-    height: 300px; // Adjust size as needed
-    border-radius: 80%; // Makes the image circular
-    overflow: hidden; // Ensures the image doesn't spill out of the border-radius
-    position: relative; // Allows z-index to work
-    z-index: 1; // Ensures it's above the nav bar
-    box-shadow: -4px 4px 14px rgba(0,0,0,0.6); // Optional: adds a shadow for depth
-    
-    img {
-      width: 100%; // Ensures the image covers the container
-      height: 100%; // Ensures the image covers the container
-      object-fit: cover; // Ensures the image is nicely cropped
-      display: block; // Removes any potential spacing issues
-    }
-  }
+  display: flex;
+  flex: 0 1 auto;
+  width: 300px; 
+  height: 300px; 
+  border-radius: 5%; 
+  overflow: hidden;
+  position: relative; 
+  z-index: 1; 
+  box-shadow: -4px 4px 14px rgba(0,0,0,0.6);
   
+  img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
 
 // Styling for the navigation bar
 nav {
@@ -52,22 +83,8 @@ nav {
     font-weight: bold;
     font-size: 1.5rem;
   }
-
-  .nav-links {
-    a {
-      color: white;
-      text-decoration: none;
-      margin-left: 2rem;
-
-      &:hover {
-        color: $accent-color;
-      }
-    }
-  }
 }
 
-// Simple styling for the main content area
 main {
   padding: 1rem;
 }
-

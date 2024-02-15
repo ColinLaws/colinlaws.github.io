@@ -1,0 +1,29 @@
+.social-icon {
+    height: 64px;
+    width: 64px;
+}
+
+blockquote {
+    font-size: 2rem; /* Adjust based on your preference */
+    text-align: center;
+    margin: 20px auto;
+}
+
+blockquote {
+    font-size: 2.0rem;
+}
+
+blockquote p:before {
+    content: open-quote;
+}
+
+blockquote p:after {
+    content: close-quote;
+}
+
+blockquote footer {
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-top: 0px;
+}
