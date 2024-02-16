@@ -1,36 +1,9 @@
-// =========================================================
-// 
-//  Dear lovely reader,
-//
-//      This is not indicative of the quality CSS or HTML
-//  which I have written professionally for nearly an 
-//  entire decade. Staying on the bleeding edge of web 
-//  techologoies can teach you a thing or two about 
-//  pragmatism.
-//
-//      As Richard Stallman once famously said, "I speak in 
-//  paragraphs." My future will be focused on high perf.
-//  simulations and gaming, so I'm not worried about what
-//  this site looks like, or how bad this code smells.
-//
-//  Yours truly,
-//      - Colin Laws
-//
-//  p.s. I used ChatGPT 4 for quick and dirty css :)
-// =========================================================
-
-// Define base colors for theme
-$primary-color: #4086ff; 
-$accent-color: #ffc107; 
-$light-background: #f4f4f4; 
-$dark-text: #333;
-
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: $light-background;
-  color: $dark-text;
+  background: #f4f4f4;
+  color: #333;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -68,10 +41,9 @@ html, body {
   }
 }
 
-// Styling for the navigation bar
 nav {
   min-height: 35px;
-  background-color: $primary-color;
+  background-color: #4086ff;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -93,7 +65,7 @@ nav {
       margin-left: 2rem;
 
       &:hover {
-        color: $accent-color;
+        color: #ffc107;
       }
     }
   }
@@ -101,4 +73,35 @@ nav {
 
 main {
   padding: 1rem;
+}
+
+.social-icon {
+  height: auto;
+  width: 64px;
+  margin: 5px 10px;
+}
+
+blockquote {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px auto;
+}
+
+blockquote {
+  font-size: 2.0rem;
+}
+
+blockquote p:before {
+  content: open-quote;
+}
+
+blockquote p:after {
+  content: close-quote;
+}
+
+blockquote footer {
+  text-align: right;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-top: 0px;
 }
